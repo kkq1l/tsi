@@ -8,16 +8,12 @@ const footer = () =>{
             
             
             <div className="columns-[20vw] ml-5">
-            <h2 className="uppercase font-bold">О нас</h2>
                 
-                <ul className="">
-                    <li>asd</li>
-                    <li>asd</li>
-                    <li>asd</li>
-                </ul>
+                    <a href="soglashenie">Пользовательское соглашение</a><br/>
+                    <a href="politika">Политика конфиденциальности</a>
             </div>
             <div className="columns-[30vw]">
-                <h2 className="uppercase">Второй блок</h2>
+            <h2 className="uppercase font-bold">О нас</h2>
             </div>
             <div className="columns-[30vw]">c</div>
             <img src="ss"/>
