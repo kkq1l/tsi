@@ -13,13 +13,16 @@ import Politika from './pages/Politika';
 
 
 import { Button } from './components/Button';
+import { Input } from './components/Input';
+import { Text } from './components/Text';
 
 function App() {
   const [count, setCount] = useState(0)
   
   return (
     <>
-	<Header/>
+    
+    <Header/>
     <BrowserRouter>
       <Routes>
         <Route path = "/" element = {<Home />}></Route>
