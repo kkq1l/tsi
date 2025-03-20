@@ -1,10 +1,10 @@
 import React from "react";
 
 export const Button = (props) => {
-  const { size, color, title } = props;
+  const { size, color, title, ronClick } = props;
   // класс по умолчанию
   const defaultClass =
-    "flex items-center rounded-2 h-[40px] w-[max-content] px-4 py-2";
+    "mb-4 flex items-center rounded-2 h-[40px] w-[max-content] px-4 py-2";
 
   const classes = {
     colors: {
@@ -14,6 +14,10 @@ export const Button = (props) => {
       },
       secondary: {
         button: "bg-red-500",
+        text: "text-white",
+      },
+      succes: {
+        button: "bg-green-500",
         text: "text-white",
       },
     },
@@ -29,7 +33,7 @@ export const Button = (props) => {
         defaultClass + " " + classes.sizes[size] + " " + classes.colors[color].button
       }
     >
-      <div className={classes.colors[color].text}>{title}</div>
+      <button className={classes.colors[color].text} onClick={ronClick}>{title}</button>
     </div>
   );
 };

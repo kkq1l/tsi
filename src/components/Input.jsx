@@ -1,10 +1,10 @@
 import React from "react";
 
 export const Input = (props) => {
-  const { size, typesq, title,length } = props;
+  const { size, typesq, title,length,ronChange } = props;
   
   const defaultClass =
-    "bg-sky-200 flex items-center h-[40px] px-4 py-2 rounded-lg flex items-center rounded-2 h-[40px] px-4 py-2 outline-hidden";
+    "mb-4 bg-sky-200 flex items-center h-[40px] px-4 py-2 rounded-lg flex items-center rounded-2 h-[40px] px-4 py-2 outline-hidden";
     const k=1;
   const classes = {
     types: {
@@ -20,7 +20,7 @@ export const Input = (props) => {
   };
   return (
     <>
-    <input className={defaultClass+" "+classes.types[typesq]+" "+classes.lengths[length]} placeholder={title} type="text"/>
+    <input className={defaultClass+" "+classes.types[typesq]+" "+classes.lengths[length]} placeholder={title} onChange={ronChange} type="text"/>
     </>
   );
 };

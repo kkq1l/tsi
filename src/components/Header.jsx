@@ -5,6 +5,7 @@ const Header = () =>{
         <a href="/">Home</a>
         <a href="/About">About</a>
         <a href="/Contacts">Contacts</a>
+        <a href="/products">Продукты</a>
     </div>
 }
 
